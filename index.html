@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+	<head>
+	  <meta charset="UTF-8">
+	  <title>Reloj Digital</title>
+	  <link rel="stylesheet" href="css/bootstrap.css">
+	  <link rel="stylesheet" href="css/font-awesome.min.css">
+	  <link rel="stylesheet" href="css/main.css">
+	  <link href='https://fonts.googleapis.com/css?family=Dancing+Script:700' rel='stylesheet' type='text/css'>
+	</head>
+	<body>
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-12">
+					<div id="reloj" class="reloj"> 00 : 00 : 00</div>
+					<div id="fecha" class="fecha"></div>
+					<div id="horaCapital"></div>
+					<!-- Button trigger modal -->
+					<button type="button" class="boton" data-toggle="modal" data-target="#myModal">
+					  <span class="glyphicon glyphicon-globe" aria-hidden="true"></span>
+					</button>
+					<!-- Modal -->
+					<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+					  <div class="modal-dialog" role="document">
+					    <div class="modal-content">
+						    <div class="modal-header">
+						        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true"></span></button>
+						        <h4 class="modal-title" id="myModalLabel">World Clock</h4>
+						    </div>
+					      	<div class="modal-body">
+					      		<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="0">Chicago</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="1">Sao Paulo</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="2">Santiago</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="3">México D.F</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="4">Caracas</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="5">Brasilia</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="6">Quito</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="7">Guayaquil</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="8">Santa Marta</label>
+								</div>
+								<div class="checkbox">
+									<label><input type="checkbox" class="nombreCapital" data="9">Bogotá</label>
+								</div>
+			      	</div>
+			  		</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.js"></script>
+	<script src="js/bootstrap.min.js"></script>
+	<script src="js/main.js"></script>
+	</body>
+</html>

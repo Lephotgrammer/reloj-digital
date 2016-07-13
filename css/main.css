@@ -1,0 +1,53 @@
+body {
+	background: url(../photo.jpg);
+	background-size: cover;
+	background-repeat: no-repeat; 
+	background-attachment: fixed;
+	font-family: 'Dancing Script', cursive;
+}
+
+.container {
+	margin-top: 20%;
+	text-align: center;
+}
+
+.reloj {
+	font-size: 60px;
+	color: whitesmoke;
+	margin: 30px;
+}
+.boton {
+	padding: 5px 10px;
+	border-radius: 10px;
+	color: white;
+}
+.glyphicon {
+	text-align: center;
+	color: #0F2226;
+	font-size: 18px;
+}
+.checkbox {
+	text-align: left;
+	font-size: 18px;
+}
+
+.fecha {
+	color: #fff;
+	font-size: 30px;
+	margin: 0 auto 30px;
+}
+
+.nombre , .hora{
+	font-size: 30px;
+	color: white;
+	display: inline-block;
+}
+
+.fa-arrow-right {
+	margin: 0 5px;
+	font-size: 35px;
+}
+
+.nombre {
+	margin-right: 50px;
+}
