@@ -14,29 +14,29 @@ $(function() {
 var num= 0;
 
 function actual() {
-    var fecha=new Date(); //Actualizar fecha.
-    var hora=fecha.getHours(); //hora actual
-    var minuto=fecha.getMinutes(); //minuto actual
-    var segundo=fecha.getSeconds(); //segundo actual
-    var dia=fecha.getDay(); //día actual
-    var mes=fecha.getMonth(); //mes actual
+    var fecha=new Date(); 
+    var hora=fecha.getHours(); 
+    var minuto=fecha.getMinutes(); 
+    var segundo=fecha.getSeconds(); 
+    var dia=fecha.getDay(); 
+    var mes=fecha.getMonth(); 
    	var meses=new Array ("Enero","Febrero","Marzo","Abril","Mayo","Junio","Julio","Agosto","Septiembre","Octubre","Noviembre","Diciembre");
 	var dias=new Array("Dom", "Lun", "Mar", "Mié", "Jue", "Vie", "Sáb");
-        if (hora<10) { //dos cifras para la hora
+        if (hora<10) { 
             hora="0"+hora;
             }
-        if (minuto<10) { //dos cifras para el minuto
+        if (minuto<10) { 
             minuto="0"+minuto;
             }
-        if (segundo<10) { //dos cifras para el segundo
+        if (segundo<10) { 
             segundo="0"+segundo;
             }
-         //ver en el recuadro del reloj:
+
 	setTimeout("actual()",1000); 
     $("#reloj").html(hora+" : "+minuto+" : "+segundo);	
 	$("#fecha").html(dias[dia]+ " , "+fecha.getDate()+ " de "+ meses[mes]);
 }
-//iniciar temporizador
+
 var husoHorario= [
 	{
 		name:"Chicago",
@@ -81,21 +81,20 @@ var husoHorario= [
 ]; 
 
 function capitales(num) {
-	var time=new Date(); //Actualizar fecha.
-    var h=time.getHours(); //hora actual
-    var min=time.getMinutes(); //minuto actual
-    var seg=time.getSeconds(); //segundo actual
-   	if (h<10) { //dos cifras para la hora
+	var time=new Date(); 
+    var h=time.getHours(); 
+    var min=time.getMinutes(); 
+    var seg=time.getSeconds(); 
+   	if (h<10) { 
 	    h="0"+h;
 	}
-	if (min<10) { //dos cifras para el minuto
+	if (min<10) { 
 	    min="0"+min;
 	}
-	if (seg<10) { //dos cifras para el segundo
+	if (seg<10) { 
 	    seg="0"+seg;
 	}
-    // var day=time.getDay(); //día actual
-    // var month=time.getMonth(); //mes actual
+
    	setTimeout('capitales('+num+')',1000);
     var husoCapital= husoHorario[num].name;
     var husoHora= husoHorario[num].hora;
